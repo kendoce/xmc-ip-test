@@ -2,7 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import { Placeholder, getPublicUrl, LayoutServiceData } from '@sitecore-jss/sitecore-jss-nextjs';
 import Navigation from 'src/Navigation';
-import Scripts from 'src/Scripts';
 
 // Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.
 // If you're not supporting the Experience Editor, you can remove this.
@@ -17,7 +16,6 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
 
   return (
     <>
-      <Scripts />
       <Head>
         <title>{route?.fields?.pageTitle?.value || 'Page'}</title>
         <link rel="icon" href={`${publicUrl}/favicon.ico`} />
