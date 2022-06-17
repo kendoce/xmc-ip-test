@@ -24,7 +24,7 @@ export default function addRoutesToManifest(manifest: Manifest): Promise<void> {
   const appTemplateSection = 'Page Metadata';
 
   manifest.setDefaultRouteType({
-    name: 'App Route',
+    name: 'NextjsStyleguide-App Route',
     displayName: 'App Route',
     fields: [
       {
@@ -34,7 +34,7 @@ export default function addRoutesToManifest(manifest: Manifest): Promise<void> {
         type: CommonFieldTypes.SingleLineText,
       },
     ],
-    insertOptions: ['App Route'],
+    insertOptions: ['NextjsStyleguide-App Route'],
   });
 
   return mergeFs('./data/routes') // relative to process invocation (i.e. your package.json)

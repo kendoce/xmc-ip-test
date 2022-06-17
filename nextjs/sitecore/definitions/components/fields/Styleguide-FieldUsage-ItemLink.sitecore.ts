@@ -9,7 +9,7 @@ import packageJson from '../../../../package.json';
 export default function StyleguideFieldUsageItemLink(manifest: Manifest): void {
   manifest.addComponent({
     name: 'Styleguide-FieldUsage-ItemLink',
-    templateName: 'Styleguide-FieldUsage-ItemLink',
+    templateName: 'NextjsStyleguide-Styleguide-FieldUsage-ItemLink',
     icon: SitecoreIcon.Link,
     fields: [
       {
@@ -26,7 +26,7 @@ export default function StyleguideFieldUsageItemLink(manifest: Manifest): void {
     // inherit fields from another template (../templates/Styleguide-Explanatory-Component)
     // inheritance adds fields defined on the base template(s) implicitly to this component
     inherits: [
-      'styleguide-explanatory-component-template',
+      'NextjsStyleguide-styleguide-explanatory-component-template',
     ],
   });
 }
