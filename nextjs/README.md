@@ -1,4 +1,4 @@
-# Sitecore JSS Next.js Sample Application test
+# Sitecore JSS Next.js Sample Application tes
 
 <!---
 @TODO: Update to version 20.0.0 docs before release
