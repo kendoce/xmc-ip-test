@@ -37,7 +37,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
   return {
     props,
-    notFound: props.notFound, // Returns custom 404 page with a status code of 404 when true
+        notFound: props.notFound, // Returns custom 404 page with a status code of 404 when true
   };
 };
 
