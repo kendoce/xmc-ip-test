@@ -18,6 +18,7 @@ export class DictionaryServiceFactory {
             otherwise, the service will attempt to figure out the root item for the current JSS App using GraphQL and app name.
             rootItemId: '{GUID}'
           */
+          rootItemId: '{50A57218-8DBD-541F-B40E-6EBB638A52C2}'
         })
       : new RestDictionaryService({
           apiHost: config.sitecoreApiHost,
