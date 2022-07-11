@@ -1,6 +1,3 @@
-/**
- * @param {import('next').NextConfig} nextConfig
- */
 const graphqlPlugin = (nextConfig = {}) => {
   return Object.assign({}, nextConfig, {
     webpack: (config, options) => {

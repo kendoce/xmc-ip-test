@@ -23,11 +23,9 @@ const StyleguideFieldUsageText = (props: StyleguideFieldUsageTextProps): JSX.Ele
 
       {/* Direct access to the value, which is a JS number, is also supported. */}
       <p>
-        <>
-          JS value type: {typeof fieldValue}
-          <br />
-          JS value: {fieldValue}
-        </>
+        JS value type: {typeof fieldValue}
+        <br />
+        JS value: {fieldValue}
       </p>
     </StyleguideSpecimen>
   );

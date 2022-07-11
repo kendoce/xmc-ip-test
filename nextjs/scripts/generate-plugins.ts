@@ -37,11 +37,6 @@ const pluginDefinitions = [
     moduleType: ModuleType.ESM,
   },
   {
-    listPath: 'src/temp/middleware-plugins.ts',
-    rootPath: 'src/lib/middleware/plugins',
-    moduleType: ModuleType.ESM,
-  },
-  {
     listPath: 'src/temp/page-props-factory-plugins.ts',
     rootPath: 'src/lib/page-props-factory/plugins',
     moduleType: ModuleType.ESM,

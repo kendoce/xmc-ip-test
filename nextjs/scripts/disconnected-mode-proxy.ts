@@ -12,17 +12,17 @@
 import fs from 'fs';
 import path from 'path';
 import { createDefaultDisconnectedServer } from '@sitecore-jss/sitecore-jss-dev-tools';
-import config from '../src/temp/config';
+import { config } from '../package.json';
 
 const touchToReloadFilePath = 'src/temp/config.js';
 
 const serverOptions = {
   appRoot: path.join(__dirname, '..'),
-  appName: config.jssAppName,
+  appName: config.appName,
   // Prevent require of ./sitecore/definitions/config.js, because ts-node is running
   requireArg: null,
   watchPaths: ['./data'],
-  language: config.defaultLanguage,
+  language: config.language,
   port: Number(process.env.PROXY_PORT) || 3042,
   onManifestUpdated: () => {
     // if we can resolve the config file, we can alter it to force reloading the app automatically

@@ -8,8 +8,8 @@ import { SitecoreIcon, Manifest } from '@sitecore-jss/sitecore-jss-dev-tools';
 export default function StyleguideLayout(manifest: Manifest): void {
   manifest.addComponent({
     name: 'Styleguide-Layout',
-    templateName: 'NextjsStyleguide-Styleguide-Layout',
+    templateName: 'Styleguide-Layout',
     icon: SitecoreIcon.Layout,
-    placeholders: ['NextjsStyleguide-jss-styleguide-layout'],
+    placeholders: ['jss-styleguide-layout'],
   });
 }

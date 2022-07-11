@@ -8,7 +8,7 @@ import { CommonFieldTypes, SitecoreIcon, Manifest } from '@sitecore-jss/sitecore
 export default function StyleguideFieldUsageLink(manifest: Manifest): void {
   manifest.addComponent({
     name: 'Styleguide-FieldUsage-Link',
-    templateName: 'NextjsStyleguide-Styleguide-FieldUsage-Link',
+    templateName: 'Styleguide-FieldUsage-Link',
     icon: SitecoreIcon.Link,
     fields: [
       { name: 'externalLink', type: CommonFieldTypes.GeneralLink },
@@ -19,7 +19,7 @@ export default function StyleguideFieldUsageLink(manifest: Manifest): void {
     // inherit fields from another template (../templates/Styleguide-Explanatory-Component)
     // inheritance adds fields defined on the base template(s) implicitly to this component
     inherits: [
-      'NextjsStyleguide-styleguide-explanatory-component-template',
+      'styleguide-explanatory-component-template',
     ],
   });
 }

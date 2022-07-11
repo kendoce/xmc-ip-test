@@ -1,7 +1,7 @@
 fields:
   pageTitle: Styleguide | Sitecore JSS
 placeholders:
-  NextjsStyleguide-jss-main:
+  jss-main:
     - componentName: ContentBlock
       fields:
         heading: JSS Styleguide
@@ -10,12 +10,12 @@ placeholders:
           <p>The content and layout of this page is defined in <code>/data/routes/styleguide/en.yml</code></p>
     - componentName: Styleguide-Layout
       placeholders:
-        NextjsStyleguide-jss-styleguide-layout:
+        jss-styleguide-layout:
           - componentName: Styleguide-Section
             fields:
               heading: Content Data
             placeholders:
-              NextjsStyleguide-jss-styleguide-section:
+              jss-styleguide-section:
                 - componentName: Styleguide-FieldUsage-Text
                   fields:
                     heading: Single-Line Text
@@ -120,7 +120,7 @@ placeholders:
                       # see /data/content/Styleguide/ItemLinkField for definition of this IDs
                       id: styleguide-item-link-field-shared-1
                     localItemLink:
-                      template: NextjsStyleguide-Styleguide-ItemLink-Item-Template
+                      template: Styleguide-ItemLink-Item-Template
                       fields:
                         textField: Referenced item textField
                 - componentName: Styleguide-FieldUsage-ContentList
@@ -148,10 +148,10 @@ placeholders:
                       # note that names are default auto-generated to be unique. Explicitly specified names must be unique.
                       # NOTE: local item definitions cannot be shared with other content list fields, and are
                       # generally not preferable compared to using shared definitions.
-                      - template: NextjsStyleguide-Styleguide-ContentList-Item-Template
+                      - template: Styleguide-ContentList-Item-Template
                         fields:
                           textField: Hello World Item 1
-                      - template: NextjsStyleguide-Styleguide-ContentList-Item-Template
+                      - template: Styleguide-ContentList-Item-Template
                         fields:
                           textField: Hello World Item 2
                 - componentName: Styleguide-FieldUsage-Custom
@@ -170,16 +170,16 @@ placeholders:
             fields:
               heading: Layout Patterns
             placeholders:
-              NextjsStyleguide-jss-header:
+              jss-header:
                 - componentName: Styleguide-Layout-Reuse
-              NextjsStyleguide-jss-styleguide-section:
+              jss-styleguide-section:
                 - componentName: Styleguide-Layout-Reuse
                   fields:
                     heading: Reusing Content
                     description: <p>JSS provides powerful options to reuse content, whether it's sharing a common piece of text across pages or sketching out a site with repeating <em>lorem ipsum</em> content.</p>
                   placeholders:
-                    NextjsStyleguide-jss-reuse-example:
-                      # Reference shared content using its ID (this is defined in /data/component-content/Styleguide/ContentReuse/LoremIpsumContentBlock/en.yml)
+                    jss-reuse-example:
+                      # Reference shared content using its ID (this is defined in /data/component/content/Styleguide/ContentReuse/LoremIpsumContentBlock/en.yml)
                       # Shared content is an 'edit once, reflected everywhere' operation for a content author.
                       - id: lorem-ipsum-content-block
                       - id: lorem-ipsum-content-block
@@ -195,7 +195,7 @@ placeholders:
                     heading: Tabs
                     description: <p>Creating hierarchical components like tabs is made simpler in JSS because it's easy to introspect the layout structure.</p>
                   placeholders:
-                    NextjsStyleguide-jss-tabs:
+                    jss-tabs:
                       - componentName: Styleguide-Layout-Tabs-Tab
                         fields:
                           title: Tab 1
@@ -212,7 +212,7 @@ placeholders:
             fields:
               heading: Sitecore Patterns
             placeholders:
-              NextjsStyleguide-jss-styleguide-section:
+              jss-styleguide-section:
                 - componentName: Styleguide-SitecoreContext
                   fields:
                     heading: Sitecore Context
@@ -231,11 +231,15 @@ placeholders:
                     # they are always sent to the component as strings.
                     columns: 5
                     useCallToAction: true
+                - componentName: Styleguide-Tracking
+                  fields:
+                    heading: Tracking
+                    description: <p><small>JSS supports tracking Sitecore analytics events from within apps. Give it a try with this handy interactive demo.</small></p>
           - componentName: Styleguide-Section
             fields:
               heading: Multilingual Patterns
             placeholders:
-              NextjsStyleguide-jss-styleguide-section:
+              jss-styleguide-section:
                 - componentName: Styleguide-Multilingual
                   fields:
                     heading: Translation Patterns

@@ -1,20 +1,16 @@
 {
   "name": "nextjs-styleguide",
   "description": "Application utilizing Sitecore JavaScript Services and Next.js",
-  "version": "21.0.0-canary",
+  "version": "20.0.3",
   "private": true,
   "config": {
     "appName": "nextjs-styleguide",
     "rootPlaceholders": [
-      "NextjsStyleguide-jss-main"
+      "jss-main"
     ],
     "sitecoreConfigPath": "/App_Config/Include/zzz",
     "graphQLEndpointPath": "/sitecore/api/graph/edge",
-    "language": "en",
-    "templates": [
-      "nextjs",
-      "nextjs-styleguide"
-    ]
+    "language": "en"
   },
   "engines": {
     "node": ">=12",
@@ -33,15 +29,15 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@sitecore-jss/sitecore-jss-nextjs": "^21.0.0-canary",
+    "@sitecore-jss/sitecore-jss-nextjs": "^20.0.1",
     "bootstrap": "^4.3.1",
     "graphql": "~15.4.0",
     "graphql-tag": "^2.11.0",
-    "next": "^12.1.6",
-    "next-localization": "^0.12.0",
+    "next": "^12.1.0",
+    "next-localization": "^0.10.0",
     "nprogress": "~0.2.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^1.19.1",
@@ -51,12 +47,12 @@
     "@graphql-codegen/typescript-operations": "^1.17.9",
     "@graphql-codegen/typescript-resolvers": "^1.17.10",
     "@graphql-typed-document-node/core": "^3.1.0",
-    "@sitecore-jss/sitecore-jss-cli": "^21.0.0-canary",
-    "@sitecore-jss/sitecore-jss-dev-tools": "^21.0.0-canary",
+    "@sitecore-jss/sitecore-jss-cli": "^20.0.1",
+    "@sitecore-jss/sitecore-jss-dev-tools": "^20.0.1",
     "@types/node": "^14.6.4",
     "@types/nprogress": "^0.2.0",
-    "@types/react": "^18.0.12",
-    "@types/react-dom": "^18.0.5",
+    "@types/react": "^17.0.15",
+    "@types/react-dom": "^17.0.9",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
     "axios": "^0.21.1",
@@ -64,7 +60,6 @@
     "chokidar": "~3.1.1",
     "constant-case": "^3.0.4",
     "cross-env": "~6.0.3",
-    "dotenv": "^16.0.0",
     "eslint": "^7.32.0",
     "eslint-config-next": "^11.0.1",
     "eslint-config-prettier": "^6.15.0",

@@ -12,9 +12,9 @@ import {
 import NextLink from 'next/link';
 import {
   ConnectedDemoQueryDocument,
-  NextjsStyleguideAppRoute as AppRoute,
+  AppRoute as AppRoute,
   Item,
-  NextjsStyleguideGraphQlConnectedDemo as GrapQLConnectedDemoDatasource,
+  GraphQlConnectedDemo as GrapQLConnectedDemoDatasource,
 } from './GraphQL-ConnectedDemo.dynamic.graphql';
 import { ComponentProps } from 'lib/component-props';
 import config from 'temp/config';
