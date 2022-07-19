@@ -17,7 +17,7 @@ class GraphqlSitemapServicePlugin implements SitemapFetcherPlugin {
       The Sitemap Service needs a root item ID in order to fetch the list of pages for the current
       app. If your Sitecore instance only has 1 JSS App, you can specify the root item ID here;
       otherwise, the service will attempt to figure out the root item for the current JSS App using GraphQL and app name.
-      rootItemId: '{50A57218-8DBD-541F-B40E-6EBB638A52C2}'
+      rootItemId: '{GUID}'
       */
     });
   }
