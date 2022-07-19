@@ -24,7 +24,7 @@ const StyleguideFieldUsageImage = (props: StyleguideFieldUsageImageProps): JSX.E
       See here for all the features provided by next/image: https://nextjs.org/docs/api-reference/next/image
     */}
     <p>Plain image</p>
-    <NextImage field={props.fields.sample1} priority height="51" width="204" />
+    <NextImage field={props.fields.sample1} height="51" width="204" />
 
     {/*
       Advanced image usage example
@@ -57,6 +57,7 @@ const StyleguideFieldUsageImage = (props: StyleguideFieldUsageImageProps): JSX.E
       width="200"
       sizes="50vw"
       layout="responsive"
+      priority
     />
   </StyleguideSpecimen>
 );
